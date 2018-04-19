@@ -1,0 +1,13 @@
+CREATE TABLE `product` (
+`id`  int NOT NULL ,
+`name`  varchar(255) NULL ,
+`description`  varchar(255) NULL ,
+`type`  varchar(255) NULL ,
+`interest_rate`  decimal(10,2) NULL ,
+PRIMARY KEY (`id`)
+)
+;
+
+INSERT into product(name,description,type,interest_rate) values('日利宝','24小时后产生收益','day',0.1);
+INSERT into product(name,description,type,interest_rate) values('周利宝','一周（七天，包括周末）产品，买入之后三天可赎回，没满一周按日利宝处理','week',0.5);
+INSERT into product(name,description,type,interest_rate) values('月利宝','一个月产品，买入后一周可赎回，没满一个月按周利宝处理','month',0.8);
